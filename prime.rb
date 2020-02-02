@@ -17,8 +17,12 @@ def sieve(max)
   primes.compact
 end
 
+def prime?(num)
+  sieve(num).include?(num)
+end
 
-#define a method #prime?() that takes in an integer argument and returns a boolean true or false prime number
+puts prime?(105557)
 
-def prime_lab(integer)
+
+
   
