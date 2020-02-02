@@ -5,6 +5,8 @@ puts Benchmark.measure { BigMath.PI(10_000) }
 
 def sieve(max)
    primes = (0..max).to_a
+   primes[0] = primes[1] = nil
+   
 
 #define a method #prime?() that takes in an integer argument and returns a boolean true or false prime number
 
