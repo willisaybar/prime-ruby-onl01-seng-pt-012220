@@ -11,6 +11,8 @@ def sieve(max)
     next unless p
     break if p*p > max
     counter += 1
+    (p*p).step(max,p) { |m| primes[m] = nil }
+  end
 
 #define a method #prime?() that takes in an integer argument and returns a boolean true or false prime number
 
